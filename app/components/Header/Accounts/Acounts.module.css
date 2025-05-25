@@ -1,0 +1,21 @@
+
+.accounts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Account buttons */
+.accountBtn {
+  width: 500px;
+  height: 50px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(45deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 100;
+  cursor: pointer;
+}

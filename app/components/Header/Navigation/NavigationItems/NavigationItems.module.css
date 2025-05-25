@@ -1,0 +1,18 @@
+/* Navigation list */
+.lists {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;  
+  gap: 10px;
+}
+
+.list {
+  font-size: 18px;
+  font-weight: 100;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  white-space: nowrap;  
+  cursor: pointer;
+}

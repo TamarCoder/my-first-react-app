@@ -1,0 +1,38 @@
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 25px 74px 225px; 
+    border-radius: 36px;  
+    background: rgba(0, 0, 0, 0.73);
+    width: 680px;
+    height: 561px;
+    flex-shrink: 0;
+
+}
+
+
+.singIn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+ 
+.singUp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+ 
+.singUpNames{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px
+}
+.singUpNames input {
+    width: 260px;
+}
