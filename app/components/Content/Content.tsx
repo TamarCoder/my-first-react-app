@@ -7,7 +7,12 @@ export default function Content() {
 
   return (
     <main className={styles.mainContainer}>
+
+
         <ForsmInputs/>
+
+
+
     </main>
   );
 }
