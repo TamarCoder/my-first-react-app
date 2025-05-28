@@ -15,7 +15,6 @@ const FormsInputs = () => {
                 <Logo />
                 {isLogin ? (
                     <>
-
                         <Inputs
                             lableTtitle="Enter your email"
                             idInp="email"
