@@ -6,11 +6,8 @@ import styles from "./FormsInputs.module.css";
 import { CostomButtons } from "../../CostomButtons/CostomButtons";
 import Inputs from "./Inputs/Inputs";
 
-export default () => {
+const FormsInputs = () => {
     const [isLogin, setIsLogin] = useState(true); // true → login, false → register
-    const handleToggle = () => {
-        setIsLogin(!isLogin);
-    };
 
     return (
         <form className={styles.formContainer}>
@@ -18,6 +15,7 @@ export default () => {
                 <Logo />
                 {isLogin ? (
                     <>
+
                         <Inputs
                             lableTtitle="Enter your email"
                             idInp="email"
@@ -67,4 +65,7 @@ export default () => {
             </div>
         </form>
     );
+
 };
+
+export default FormsInputs;
