@@ -1,5 +1,5 @@
 import  styles from './PlayMusic.module.css';
-import {ArrowLeftOutlined, UnorderedListOutlined} from "@ant-design/icons";
+import {ArrowLeftOutlined, PauseCircleOutlined, PlayCircleOutlined, StepBackwardOutlined, StepForwardOutlined, UnorderedListOutlined} from "@ant-design/icons";
 import dayjs from "dayjs";
 
 export  default () => {
@@ -17,16 +17,29 @@ export  default () => {
                    </div>
               </div>
               <div className={styles.center}>
-                  <div className={styles.playBackground}>
-                      <div className={styles.plate}>
+                   <div className={styles.playBackground}>
+                       <div className={styles.plate}>
                           <img src="/vinil.jpg" alt="vinil" className={styles.plateImg}/>
                           <div className={styles.inside}></div>
                           <div className={styles.insideTwo}></div>
-                          <div className={styles.playFront}>
-                              <div className={styles.frontShadow}></div>
+                           <div className={styles.playFront}>
+                              <div className={styles.frontShadow}>
+                                <p className={styles.songName}>Merry Cristams</p>
+                                <div className={styles.controls}>
+                                    <StepBackwardOutlined />
+                                    <PlayCircleOutlined />
+                                    <StepForwardOutlined />
+                                </div>
+                              </div>
+                              <div className={styles.songRange}>
+                                 აქანე იქნება  მუზიკის  რეინჯი
+                              </div>
                           </div>
+                          
                       </div>
+                   
                   </div>
+                  
               </div>
               <div className={styles.bottom}></div>
          </div>

@@ -67,17 +67,18 @@
 
 .center{
     width: 100%;
-    height: 300px;
+    height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+ 
 
 }
 
 .playBackground{
     width: 280px;
-    height: 200px;
+    height: 150px;
     background-color: rgb(224,226,232);
     border-radius: 20px;
     box-shadow: -18px 10px 35px -9px rgba(84,83,83,0.73);
@@ -93,7 +94,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    
+    
 }
 .plateImg:hover {
     animation-play-state: running;
@@ -119,6 +121,8 @@
     animation-play-state: paused;
     animation-timing-function: linear;
     cursor: pointer;
+    position: relative;
+    top: -20%;
 }
 .inside{
     width: 200px;
@@ -126,9 +130,9 @@
     background: #3F5EFB;
     position: absolute;
     top: 32.6%;
-    box-shadow: 2px 3px 15px 4px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 2px 3px 15px 4px rgba(0,0,0,0.75);
-    -moz-box-shadow: 2px 3px 15px 4px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 4px 7px 30px 5px rgba(97, 99, 113, 0.81);
+-moz-box-shadow: 4px 7px 30px 5px rgba(97, 99, 113, 0.81);
+box-shadow: 4px 7px 30px 5px rgba(97, 99, 113, 0.81);
 }
 .insideTwo{
     width: 250px;
@@ -136,34 +140,67 @@
     background: #3F5EFB;
     position: absolute;
     top: 32.6%;
-    box-shadow: 2px 3px 15px 4px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 2px 3px 15px 4px rgba(0,0,0,0.75);
-    -moz-box-shadow: 2px 3px 15px 4px rgba(0,0,0,0.75);
+   -webkit-box-shadow: 4px 7px 30px 5px rgba(97, 99, 113, 0.81);
+-moz-box-shadow: 4px 7px 30px 5px rgba(97, 99, 113, 0.81);
+box-shadow: 4px 7px 30px 5px rgba(97, 99, 113, 0.81);
 }
-.playFront{
+ .playFront{
     width: 280px;
-    height: 153px;
+    height: 125px;
     display: flex;
     position: absolute;
-    top: 32.6%;
+    top: 30%;
     background-color: rgb(224,226,232);
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
-
-    box-shadow: -18px 10px 35px -9px rgba(84,83,83,0.73);
-    -webkit-box-shadow: -18px 10px 35px -9px rgba(84,83,83,0.73);
-    -moz-box-shadow: -18px 10px 35px -9px rgba(84,83,83,0.73);
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+     
 }
 
 .frontShadow{
-    width: 200px;
-    height: 50px;
-    background-color: sandybrown;
-    position: absolute;
-    border-bottom-right-radius:100px ;
-    border-bottom-left-radius:100px ;
+  position: absolute;
+  top: 0;
+  left: 50%;
+   transform: translateX(-50%);
+  width: 150px;
+  height: 75px; 
+  background: transparent;
+    background-color: rgb(224,226,232);
+box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+   z-index: 1;
+   pointer-events: none;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center; 
+   gap: 3px;
+}
+.songName{
+    font-family: sans-serif;
+    font-size: 12px;
+}
+.controls{
+    width: 130px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 15px;
+    font-size: 20px;
+}
 
+.songRange{
+    width: 260px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 35px;
 }
 
 .bottom{
