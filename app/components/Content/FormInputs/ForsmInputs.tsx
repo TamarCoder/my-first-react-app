@@ -58,7 +58,13 @@ const FormsInputs = () => {
                                 typeInp="password"
                             />
                         </div>
-                        <CostomButtons title="Registration" />
+                        <CostomButtons
+                            title="Registration"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                setIsLogin(true);
+                            }}
+                        />
                     </div>
                 )}
             </div>
